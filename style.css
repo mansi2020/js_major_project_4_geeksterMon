@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@600&family=Roboto&display=swap');
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #555555;
+}
+
+
+.content-wrapper {
+    display: block;
+    margin: auto;
+    max-height: 1700px;
+    max-width: 1700px;
+}
+
+body {
+    background-color: black;
+}
+
+
+h1 {
+    font-family: 'Grandstander', cursive;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    color:white;
+}
+
+#pokemon-search-form {
+    text-align: center;
+}
+
+
+#pokemon-type-filter {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:black;
+}
+
+.form-spacers{
+    height: 10px;
+}
+
+.type-filter{
+    margin: 10px;;
+}
+
+#pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.flip-card {
+    margin: 20px;
+    width: 200px;
+    height: 275px;
+    text-align: center;
+    justify-content: center;
+    perspective: 1000px;
+    opacity: 0.95;
+}
+h1{
+    text-shadow: 2px 2px 20px yellowgreen;
+}
+
+.flip-card-inner {
+    -webkit-box-shadow: 3px 3px 5px 6px #2f2e2e;
+    -moz-box-shadow: 3px 3px 5px 6px #343434;
+    box-shadow: 3px 3px 5px 6px #4a4949;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+
+.front-pokemon-card, .back-pokemon-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.front-pokemon-card {
+    z-index: 2;
+    transform: rotateY(0);
+}
+
+.back-pokemon-card {
+    transform: rotateY(180deg);
+}
+
+.front-pokemon-image, .back-pokemon-image {
+    position: relative;
+    top: 50px;
+}
+
+.front-poke-id, .back-poke-id {
+    position: relative;
+    width: 100%;
+    background-color: whitesmoke;
+    color: #555555;
+    justify-content: left;
+}
+
+#filterBytype,.resetBtn,select{
+    background: linear-gradient(green,yellow);
+    color:blue;
+    padding:10px 30px;
+    font-size: 1rem;
+    font-weight:600;
+}
+#filterBytype:hover,.resetBtn:hover,select:hover{
+    color:white;
+    background:transparent;
+    box-shadow: 2px 2px 2px green;
+    border:2px solid green;
+    cursor: pointer;
+}
+#pokemon-search-input{
+    padding:10px;
+    width:600px;
+    margin-top:2rem;
+    border:2px solid white;
+    background-color: transparent;
+    box-shadow: inset 3px 3px 10px rgb(114, 114, 114);
+}
+::placeholder{
+    color:rgb(187, 185, 185);
+}
+.front-pokemon-type {
+    width: fit-content;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    /* left: 75px; */
+    margin: auto;
+    bottom: -12.5px;
+    font-size: small;
+}
+
+#grass {
+    background : linear-gradient(#9bcc50,#9bcc50,white);
+}
+
+#bug {
+    background: linear-gradient(#fc66a7,#fc66a7,white);
+}
+
+#fire {
+    background: linear-gradient(#fde024,#fde024,white);
+}
+
+#water {
+    background: linear-gradient(#4592c4,#4592c4,white);
+}
+
+#ice {
+    background: linear-gradient(#51c4e7,#51c4e7,white);
+}
+
+#electric {
+    background: linear-gradient(#eed535,#eed535,white);
+}
+
+#psychic {
+    background: linear-gradient(#f366b9,#f366b9,white);
+}
+
+
+#fairy {
+    background: linear-gradient(#fdb9e9,#fdb9e9,white);
+}
+
+#ghost {
+    background: linear-gradient(#7b62a3,#7b62a3,white);
+}
+
+#ground {
+    background: linear-gradient(#f7de3f,#f7de3f,white);
+}
+
+#poison {
+    background: linear-gradient(#b97fc9,#b97fc9,white);
+}
+
+#fairy {
+    background: linear-gradient(#fdb9e9,#fdb9e9,white);
+}
+
+#normal {
+    background: linear-gradient(#27bef5,#27bef5,white);
+}
+
+#dragon {
+    background: linear-gradient(goldenrod,goldenrod,white);
+}
+
+#fighting {
+    background: linear-gradient(#d56723,#d56723,white);
+}
+
+#rock {
+    background: linear-gradient(#a38c21,#a38c21,white) ;
+}
